@@ -1,0 +1,11 @@
+public class SingletonTest {
+    public static void main(String[] args){
+        Logger logger1 = Logger.getinstance();
+        Logger logger2 = Logger.getinstance();
+
+        logger1.log("First Message");
+        logger2.log("Second Message");
+
+        System.out.println(logger1 == logger2);
+    }
+}
